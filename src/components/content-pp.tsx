@@ -1,14 +1,7 @@
 'use client'
 import Image from 'next/image'
-import logoFP from '../../public/favicon.png'
-import { CallBell } from "@phosphor-icons/react"
 
-
-interface ContentPpProps {
-    updateTime: string | number | undefined;
-}
-
-export function ContentPp({ updateTime }: ContentPpProps) {
+export function ContentPp() {
 
     return (
         <>

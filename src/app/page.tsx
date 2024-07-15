@@ -20,7 +20,7 @@ export default async function Home() {
   const zonedDate = toZonedTime(date, timeZone)
   const formattedDate = format(zonedDate, 'HH:mm', { timeZone })
 
- 
+  revalidateTag('link-casa')
   return (
     <main>
       <Analytics />
