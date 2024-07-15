@@ -35,7 +35,7 @@ export function Footer() {
                         AVISO LEGAL
                     </h1>
                     <p className="text-sm">
-                    O site grupofpsinais.com.br é uma plataforma independente dedicada a cassinos online e jogos de cassino. Fornecemos análises detalhadas e imparciais, 
+                    O site robinjogo.com é uma plataforma independente dedicada a cassinos online e jogos de cassino. Fornecemos análises detalhadas e imparciais, 
                     mas recomendamos sempre verificar as regulamentações locais antes de participar de qualquer atividade de jogo.
                     </p>
                 </div>
