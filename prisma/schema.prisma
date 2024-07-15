@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Card {
+  id          Int      @id @default(autoincrement())
+  nomeJogo    String
+  categoriaJogo   String
+  porcentagem Int
+  minima      Int
+  padrao      Int
+  maxima      Int
+  updatedAt   DateTime @default(now()) @updatedAt
+}
+
+model Settings {
+  id          Int     @id @default(autoincrement())
+  casa        String  @unique
+  link        String
+  bannerImage String?
+
+  @@index([casa])
+}

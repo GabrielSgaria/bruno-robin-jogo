@@ -2,32 +2,155 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.roboto {
+    font-family: var(--roboto);
+  }
+.rubik {
+    font-family: var(--rubik)
+  }
+
+.imagebg {
+  background-position-x: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 200% 100%;
+  transition: background-position-x 1s ease;
+  animation: progress-bar-stripes 4s linear infinite;
+  position: absolute;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.verde-lima {
+  background: #16a34a;
+}
+
+.verde-escuro {
+  background: #064e3b;
+}
+.verde2 {
+  background: #65a30d;
+}
+.rosa {
+  background: #db2777;
+}
+.azul {
+  background: #0d9488;
+}
+.roxo {
+  background: #a21caf;
+}
+.amarelo-escuro {
+  background: #ca8a04;
+}
+
+.laranja-claro {
+  background: #f59e0b;
+}
+
+.azul-marinho {
+  background: #3730a3;
+}
+
+.cinza-claro {
+  background: #075985;
+}
+
+.rosa-claro {
+  background: #ec4899;
+}
+
+.roxo-escuro {
+  background: #312e81;
+}
+
+.azul-ciano {
+  background: #1d4ed8;
+}
+
+.amarelo-verde {
+  background: #facc15;
+}
+
+.laranja-vermelho {
+  background: #ea580c;
+}
+
+.azul-celeste {
+  background: #059669;
+}
+
+.rosa-forte {
+  background: #be185d;
+}
+
+.roxo-claro {
+  background: #d946ef;
+}
+
+.amarelo-ouro {
+  background: #eab308;
+}
+
+.vermelho-marrom {
+  background: #f97316;
+}
+
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position-x: 100%;
+  }
+  to {
+    background-position-x: 0;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #166534;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+.bg-image {
+  background-image: url('https://sa-east-1.graphassets.com/clwqdkiy400yu07ls56ql92po/clxagfyaj024e07m1ensmpjvz');
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+@media (min-width: 768px) {
+  .bg-image {
+    background-image: url('https://sa-east-1.graphassets.com/clwqdkiy400yu07ls56ql92po/clxagqhjp029t08lu2ssvqv67');
+    background-size: cover;
+  }
+}
+
+.bg-image.loaded {
+  background-image: url('https://sa-east-1.graphassets.com/clwqdkiy400yu07ls56ql92po/clxagfyaj024e07m1ensmpjvz');
+}
+
+@media (min-width: 768px) {
+  .bg-image.loaded {
+    background-image: url('https://sa-east-1.graphassets.com/clwqdkiy400yu07ls56ql92po/clxagqhjp029t08lu2ssvqv67');
   }
 }
