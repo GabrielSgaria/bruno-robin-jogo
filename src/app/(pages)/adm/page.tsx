@@ -5,7 +5,7 @@ import prisma from "@/lib/db";
 
 export default async function PageAdmin() {
     const settings = await prisma.settings.findUnique({
-        where: { id: 1 }
+        where: { casa: 'robin' }
     })
     return (
         <div className="bg-zinc-50 h-screen w-full">
