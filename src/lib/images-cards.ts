@@ -139,5 +139,4 @@ export const allImageCards: { [key: number]: string } = {
     137: `https://sa-east-1.graphassets.com/clxhh2irf0i1g0ekkf9ad5xah/clxmkk46m0hvz07lq7xx2v0q2`,
     138: `https://sa-east-1.graphassets.com/clxhh2irf0i1g0ekkf9ad5xah/clxmkk4b00i2c07lw732sg4ut`,
 
-
 };

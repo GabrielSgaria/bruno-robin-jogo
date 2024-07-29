@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import logopp from '../../public/pp.webp'
 
 export function ContentPp() {
 
@@ -10,7 +11,7 @@ export function ContentPp() {
 
                     <div className="w-72">
                             <Image
-                                src='https://sa-east-1.graphassets.com/clxhh2irf0i1g0ekkf9ad5xah/cly7msmbs063607kabe7ayoud'
+                                src={logopp}
                                 width={1980}
                                 height={1080}
                                 quality={70}
